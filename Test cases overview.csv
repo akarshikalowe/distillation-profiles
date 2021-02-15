@@ -1,0 +1,64 @@
+Test Case ID,Test Scenario,Test Steps,Test Data,Expected Results,Actual Results,Pass/Fail,Comments
+1,Check user entry for crude oil,"1. Run the code.        
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:PEMBINA                                                                              
+","csv files loads in dataframe and prints the distillation profiles of Light Smiley and Pembina. 
+Also, gives the distillation profile of the mixture",as expected,Pass,
+2,Check user entry for crude oil,"1. Run the code.        
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name","Please enter the name of first crude oil:light smiley  
+Please enter the name of second crude oil:pembina                                                                               
+","csv files loads in dataframe and prints the distillation profiles of light smiley and pembina. 
+Also, gives the distillation profile of the mixture",as expected,Pass,The input isnt case sensitive
+3,Check user entry for crude oil,"1. Run the code.        
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name","Please enter the name of first crude oil:light smileyyyy
+Please enter the name of second crude oil:Pembinaaa                                                                              
+","Data does not exist for:light smileyyyy
+Data does not exist for: pembinaa",as expected,Pass,
+4,Check user entry for crude oil,"1. Run the code.        
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name","Please enter the name of first crude oil:Medium Gibson SOUR
+lease enter the name of second crude oil:MIXED Sweet blend                                                                           
+","1. csv files loads in dataframe and prints the distillation profiles of Medium Gibson SOUR and MIXED Sweet blend . 
+2. Also, gives the distillation profile of the mixture",as expected,Pass,
+5,Check the distillation profile of the mixture,"1. Run the code
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name
+","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina","1. csv files loads in dataframe and prints the distillation profiles of Light Smiley and Pembina. 
+2. Gives the distillation profiles of the mixture",as expected,Pass,Solution to point 1 in Validere pdf
+6,Check the distillation profile of the mixture for a specified distilled volume (%),"1. Run the code
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name
+4. Enter the volume(%) of evaporated mixture","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina
+Please enter the volume (%) of evaporated mixture:10%",Gives the distillation profile for 10%  - 102.6,as expected,Pass,Solution of point 3 in Validere pdf
+7,Check the distillation profile of the mixture for a specified distilled volume (%),"1. Run the code
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name
+4. Enter the volume(%) of evaporated mixture","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina
+Please enter the volume (%) of evaporated mixture:30%",Gives the distillation profile for 30%  - 209.0,as expected,Pass,Solution of point 3 in Validere pdf
+8,Check the distillation profile of the mixture for a specified distilled volume (%),"1. Run the code 
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name 
+4. Enter the volume(%) of evaporated mixture","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina
+Please enter the volume (%) of evaporated mixture:100%","Returns no value and prints ""Please enter the correct volume (%) of evaporated mixture""",as expected,Pass,
+9,Check the distillation profile of the mixture for a specified distilled volume (%),"1. Run the code 
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name 
+4. Enter the volume(%) of evaporated mixture","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina
+Please enter the volume (%) of evaporated mixture:10","Returns no value and prints ""Please enter the correct volume (%) of evaporated mixture""",as expected,Pass,
+10,Check the distillation profile of the mixture,"1. Run the code 
+2. Enter the 1st crude oil name 
+3. Enter the 2nd crude oil name 
+4. Enter the volume(%) of evaporated mixture","Please enter the name of first crude oil:Light Smiley   
+Please enter the name of second crude oil:Pembina
+Please enter the volume (%) of evaporated mixture:99%","Light smiley - 99%  temperature is NaN
+Pembina - 99% temperature is NaN
+Returns distillation profile of mixture on
+99% - temperature is NaN",as expected,Pass,
