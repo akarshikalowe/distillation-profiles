@@ -44,7 +44,7 @@ The csv files have been saved in the data_files folder for the following crude o
 ## Program flow
 
 1. User enters the name of crude oil from the given list
-2. The csv files are named after the crude oils
+2. The csv files are named after the crude oils for simplifications
 3. When user enters the choice of their crude oil the csv is directly pulled from data_files folder
 4. Converted the user entered oil name(uppercase or lowercase)  to lowercase string in order to handle errors
 5. Cleaned the data files by selecting only required columns and rows
